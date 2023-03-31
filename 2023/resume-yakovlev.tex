@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref} 
+
+\name{Pavel Yakovlev} % Your name
+\address{yvpavel@gmail.com} % Your phone number and email
+\address{\href{https://www.paulyakovlev.com}{paulyakovlev.com} \\ \href{https://www.github.com/paulyakovlev}{github.com/paulyakovlev}} % Your phone number and email
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+    {\bf University of California, Santa Cruz} \hfill {\em Graduated June 2020} \\ 
+    Bachelor's in Computer Science
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+    \begin{rSubsection}{Lawrence Livermore National Lab - Computing Intern}{June 2019 - September 2019}{Java, JUnit, SQL}{Livermore, CA}
+        \item Worked on improving automated testing and software integration framework for large scientific facility.
+        \item Contributed to JUnit test suite and provided technical documentation.
+        \item Development focused on industry-standard continuous integration and test-driven development practices.
+    \end{rSubsection}
+
+    \begin{rSubsection}{remote.it - Sofware Engineering Intern}{May 2018 - June 2019}{ReactJS, Python, AWS, Docker, Terraform}{Palo Alto, CA}
+        \item Built an administrative web dashboard to monitor user device activity.
+        \item Wrote a library of user-end Python and Shell scripts.
+        \item Worked remotely from September 2018 through the end of the internship.
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+    \begin{rSubsection}{Santa Cruz Stranding Map}{\href{https://github.com/lmlstrandingnetwork/lml-stranding-map}{github.com/lmlstrandingnetwork/lml-stranding-map}}{ReactJS, ExpressJS, Firebase}{}
+        \item Geospatial data analysis tool for the UCSC Long Marine Lab.
+    \end{rSubsection}
+
+    \begin{rSubsection}{Pollen Planter (Cruzhacks 2020 Winner)}{\href{https://www.devpost.com/software/pollenplanter}{devpost.com/software/pollenplanter}}{React Native, Firebase}{}
+        \item Mobile app that recommends pollinator(bees,butterflies)-friendly plants for your garden.
+    \end{rSubsection}
+
+    \begin{rSubsection}{Netguard (Treehacks 2019)}{\href{https://www.devpost.com/software/netguard}{devpost.com/software/netguard}}{Python, Flask, Twilio, Docker}{}
+        \item Cyber attack protection for internet-connected devices at home.
+    \end{rSubsection}
+
+    \begin{rSubsection}{Distributed Key-Store}{\href{https://github.com/paulyakovlev/distributed-rpi-kvstore}{github.com/paulyakovlev/distributed-rpi-kvstore}}{Python, Flask, Docker}{}
+        \item Sharded, fault-tolerant key-value store that runs on a cluster of Raspbery Pi devices.
+    \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+    \begin{description}
+    \item[Languages:] C++, Java, Python, Javascript, HTML, CSS
+    \item[Frameworks and Tools:] ReactJS, NodeJS, Flask, SQL, git, Docker, REST, Agile
+    \end{description}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
