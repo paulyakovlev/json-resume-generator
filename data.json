@@ -1,0 +1,72 @@
+{
+    "basics": {
+      "name": "PAVEL YAKOVLEV",
+      "email": "yvpavel@gmail.com",
+      "github": "github.com/paulyakovlev"
+    },
+    "work": [
+      {
+        "company": "General Motors",
+        "position": "Big Data Platform Software Engineer",
+        "location": "Austin, TX",
+        "startDate": "2021-02-01",
+        "endDate": "Present",
+        "highlights": [
+          "Deployed and maintained large scale Hadoop components",
+          "Debugged and addressed Hadoop platform issues as part of on-call rotation",
+          "Develop test automation processes for build and release pipelines"
+        ]
+      },
+      {
+        "company": "Lawrence Livermore National Lab",
+        "position": "Software Engineering Intern",
+        "location": "Livermore, CA",
+        "startDate": "2019-06-01",
+        "endDate": "2019-09-01",
+        "highlights": [
+          "Improved automated testing and software integration framework",
+          "Contributed to JUnit test suite and provided technical documentation",
+          "Prototyped new test automation processess"
+        ]
+      },
+      {
+        "company": "remote.it",
+        "position": "Software Engineering Intern",
+        "location": "Palo Alto, CA",
+        "startDate": "2018-05-01",
+        "endDate": "2019-06-01",
+        "highlights": [
+          "Prototyped user-end web portals for device monitoring and management",
+          "Wrote a library of user-end Python and Shell scripts to manage IoT edge devices",
+          "Provided technical documentation for internal and end-user software tools"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Santa Cruz Stranding Map",
+        "url": "github.com/lmlstrandingnetwork/lml-stranding-map",
+        "technologies": "ReactJS, ExpressJS, Firebase",
+        "description": "Geospatial data analysis tool for the UCSC Long Marine Lab."
+      }
+    ],
+    "education": [
+      {
+        "institution": "University of California, Santa Cruz",
+        "area": "Computer Science",
+        "studyType": "Bachelor's",
+        "endDate": "2020-06-01",
+        "startDate": "2016-09-01"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Languages",
+        "keywords": ["C++", "Java", "Python", "Javascript", "HTML", "CSS"]
+      },
+      {
+        "name": "Frameworks and Tools",
+        "keywords": ["ReactJS", "NodeJS", "Flask", "SQL", "git", "Docker", "REST", "Agile"]
+      }
+    ]
+  }

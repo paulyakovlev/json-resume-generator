@@ -1,0 +1,174 @@
+/* Pavel Yakovlev Resume Style */
+@page {
+    margin: 0.75in;
+    size: letter;
+    /* Remove headers and footers in print */
+    margin-top: 0.5in;
+    margin-bottom: 0.5in;
+    
+    /* These remove the headers and footers */
+    @top-left { content: none; }
+    @top-center { content: none; }
+    @top-right { content: none; }
+    @bottom-left { content: none; }
+    @bottom-center { content: none; }
+    @bottom-right { content: none; }
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000;
+    line-height: 1.3;
+    font-size: 11pt;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20pt;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 11pt;
+}
+
+.contact-info p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+section {
+    margin-bottom: 16px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding-bottom: 3px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.job, .project, .education {
+    margin-bottom: 12px;
+}
+
+.job-header, .edu-header, .project-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.job-company, .edu-institution, .project-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.job-date, .edu-date {
+    margin: 0;
+    text-align: right;
+}
+
+.job-title-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2px;
+}
+
+.job-title, .edu-degree, .project-tech {
+    font-style: italic;
+    margin: 0;
+    margin-bottom: 2px;
+}
+
+.job-location {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Proper bullet styling */
+ul.job-details, ul.project-details {
+    margin-top: 2px;
+    margin-bottom: 8px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul.job-details li, ul.project-details li {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 2px;
+    line-height: 1.4;
+}
+
+ul.job-details li:before, ul.project-details li:before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.skill {
+    margin-bottom: 4px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.project-link {
+    float: right;
+    font-weight: normal;
+    font-size: 10pt;
+}
+
+.skills-category {
+    font-weight: bold;
+}
+
+/* Hide headers and footers in print mode */
+@media print {
+    /* Hide the title at the top */
+    header {
+        display: none !important;
+    }
+    
+    /* Hide the URL/path at the bottom */
+    @page {
+        margin-bottom: 0.5in;
+        size: letter;
+    }
+    
+    /* Hide any headers/footers Chrome might add */
+    header, footer {
+        display: none !important;
+    }
+    
+    /* Ensure no background colors are removed */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    
+    /* Remove margin collapse in print */
+    body {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    /* Hide any title that might be added */
+    .title-block-header {
+        display: none !important;
+    }
+}
