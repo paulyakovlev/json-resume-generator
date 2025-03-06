@@ -12,12 +12,11 @@
         "startDate": "2021-02-01",
         "endDate": "Present",
         "highlights": [
-          "Contributed to development and deployment of GMDP (General Motors Data Platform), GM's custom open-source Hadoop distribution, successfully migrating from Cloudera Hadoop.",
-          "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating dependencies on closed-source software and licensing.",
-          "Architected and implemented Oozie-orchestrated ETL pipeline for Ranger audit logs, automating conversion to Parquet format and enabling critical PowerBI analytics across multiple production clusters.",
-          "Contributed to Apache Ambari by implementing Livy as an individual service in the Bigtop Stack, enabling proper integration with Ambari deployment,configuration management, and monitoring. (PR #3790)",
-          "Enhanced Docker containerized Hadoop development environment by implementing local RPM repositories and enabled Ambari deployment workflows, significantly reducing setup time for developers.",
-          "Migrated Greenplum SQL macros to Databricks with cross-functional teams, preserving functionality while improving data processing workflow efficiency"
+          "Contributed to migration from Cloudera to GM's custom Hadoop platform (GMDP), generating $1.2M annual cost savings.",
+          "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.",
+          "Architected and implemented Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
+          "Contributed to Apache Ambari by implementing Livy as service in the Bigtop stack, enabling proper integration with Ambari deployment, configuration management, and monitoring. (PR #3790)",
+          "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
         ]
       },
       {
@@ -45,21 +44,12 @@
         ]
       }
     ],
-    "projects": [
-      {
-        "name": "Santa Cruz Stranding Map",
-        "url": "github.com/lmlstrandingnetwork/lml-stranding-map",
-        "technologies": "ReactJS, ExpressJS, Firebase",
-        "description": "Geospatial data analysis tool for the UCSC Long Marine Lab."
-      }
-    ],
     "education": [
       {
         "institution": "University of California, Santa Cruz",
         "area": "Computer Science",
-        "studyType": "Bachelor's",
-        "endDate": "2020-06-01",
-        "startDate": "2016-09-01"
+        "studyType": "Bachelor's Degree",
+        "graduationYear": "Class of 2020"
       }
     ],
     "skills": [
