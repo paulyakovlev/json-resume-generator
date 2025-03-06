@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
   <style>
-/* Pavel Yakovlev Resume Style */
+/* Resume Style */
 @page {
     margin: 0.75in;
     size: letter;
@@ -13,7 +13,7 @@
     margin-top: 0.5in;
     margin-bottom: 0.5in;
     
-    /* These remove the headers and footers */
+    /* Remove the headers and footers */
     @top-left { content: none; }
     @top-center { content: none; }
     @top-right { content: none; }
@@ -199,9 +199,12 @@ a {
         <span class="job-location">Austin, TX</span>
       </div>
       <ul class="job-details">
-        <li>Deployed and maintained large scale Hadoop components</li>
-        <li>Debugged and addressed Hadoop platform issues as part of on-call rotation</li>
-        <li>Develop test automation processes for build and release pipelines</li>
+        <li>Contributed to development and deployment of GMDP (General Motors Data Platform), GM's custom open-source Hadoop distribution, successfully migrating from Cloudera Hadoop.</li>
+        <li>Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating dependencies on closed-source software while ensuring GMDP 2.0 compatibility and preparing open-source contributions.</li>
+        <li>Architected and implemented Oozie-orchestrated ETL pipeline for Ranger audit logs, automating conversion to Parquet format and enabling critical PowerBI analytics across multiple production clusters.</li>
+        <li>Contributed to Apache Ambari by implementing Livy as an individual service in the Bigtop Stack, enabling proper integration with deployment,configuration management, and monitoring  (PR #3790)</li>
+        <li>Enhanced Docker containerized Hadoop development environment by implementing local RPM repositories and enabled Ambari deployment workflows, significantly reducing setup time for developers.</li>
+        <li>Migrated Greenplum SQL macros to Databricks with cross-functional teams, preserving functionality while improving data processing workflow efficiency</li>
       </ul>
     </div>
     <div class="job">
