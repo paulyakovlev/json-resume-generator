@@ -126,7 +126,7 @@ def generate_resume_html(json_file, css_file, output_file):
             html.append('    <div class="education">')
             html.append('      <div class="edu-header">')
             html.append(f'        <span class="edu-institution">{edu.get("institution", "")}</span>')
-            html.append(f'        <span class="edu-date">Graduated {format_date(edu.get("endDate", ""))}</span>')
+            html.append(f'        <span class="edu-date">{edu.get("graduationYear", )}</span>')
             html.append('      </div>')
             
             html.append(f'      <div class="edu-degree">{edu.get("studyType", "")} in {edu.get("area", "")}</div>')
