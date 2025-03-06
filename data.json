@@ -12,9 +12,12 @@
         "startDate": "2021-02-01",
         "endDate": "Present",
         "highlights": [
-          "Deployed and maintained large scale Hadoop components",
-          "Debugged and addressed Hadoop platform issues as part of on-call rotation",
-          "Develop test automation processes for build and release pipelines"
+          "Contributed to development and deployment of GMDP (General Motors Data Platform), GM's custom open-source Hadoop distribution, successfully migrating from Cloudera Hadoop.",
+          "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating dependencies on closed-source software and licensing.",
+          "Architected and implemented Oozie-orchestrated ETL pipeline for Ranger audit logs, automating conversion to Parquet format and enabling critical PowerBI analytics across multiple production clusters.",
+          "Contributed to Apache Ambari by implementing Livy as an individual service in the Bigtop Stack, enabling proper integration with Ambari deployment,configuration management, and monitoring. (PR #3790)",
+          "Enhanced Docker containerized Hadoop development environment by implementing local RPM repositories and enabled Ambari deployment workflows, significantly reducing setup time for developers.",
+          "Migrated Greenplum SQL macros to Databricks with cross-functional teams, preserving functionality while improving data processing workflow efficiency"
         ]
       },
       {

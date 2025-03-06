@@ -1,5 +1,3 @@
-# Simplified Makefile for Pavel's Resume with improved PDF options
-
 # Configuration
 JSON_FILE = data.json
 OUTPUT_DIR = build
@@ -16,7 +14,7 @@ $(OUTPUT_HTML): $(JSON_FILE) scripts/generate_resume.py $(CSS_FILE)
 	@echo "Generating HTML from JSON..."
 	@python3 ./scripts/generate_resume.py $(JSON_FILE) $(CSS_FILE) $(OUTPUT_HTML)
 
-# Generate PDF from HTML using various methods with improved print options
+# Generate PDF from HTML using gooogle chrome headless agent
 $(OUTPUT_PDF): $(OUTPUT_HTML)
 	@echo "Generating PDF..."
 	@if command -v /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome >/dev/null 2>&1; then \

@@ -1,4 +1,3 @@
-/* Pavel Yakovlev Resume Style */
 @page {
     margin: 0.75in;
     size: letter;
@@ -6,7 +5,7 @@
     margin-top: 0.5in;
     margin-bottom: 0.5in;
     
-    /* These remove the headers and footers */
+    /* Remove the headers and footers */
     @top-left { content: none; }
     @top-center { content: none; }
     @top-right { content: none; }
