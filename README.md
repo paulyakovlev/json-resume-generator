@@ -48,7 +48,7 @@ JSON to PDF resume using Chrome's headless rendering
       "institution": "University of Technology",
       "area": "Computer Science",
       "studyType": "Bachelor's Degree",
-      "graduationYear": "2020"
+      "graduationYear": "Class of 2020"
     }
   ],
   "skills": [
