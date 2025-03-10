@@ -1,5 +1,5 @@
 # JSON Resume Generator
-Simple JSON to PDF resume using Chrome's headless rendering
+JSON to PDF resume using Chrome's headless rendering
 
 `JSON → Python → HTML/CSS → Chrome headless → PDF`
 
@@ -9,7 +9,7 @@ Simple JSON to PDF resume using Chrome's headless rendering
 - Make
 - Chrome
 
-## Getting Started
+## Usage
 1. Add your resume details to `data.json`:
 ```json
 {
@@ -47,6 +47,7 @@ Simple JSON to PDF resume using Chrome's headless rendering
     {
       "institution": "University of Technology",
       "area": "Computer Science",
+      "studyType": "Bachelor's Degree",
       "graduationYear": "2020"
     }
   ],
