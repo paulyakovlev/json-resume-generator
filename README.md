@@ -10,22 +10,65 @@ Simple JSON to PDF resume using Chrome's headless rendering
 - Chrome
 
 ## Getting Started
+1. Add your resume details to `data.json`:
+```json
+{
+  "basics": {
+    "name": "Jane Doe",
+    "email": "jane@example.com",
+    "github": "github.com/janedoe",
+    "website": "janedoe.com"
+  },
+  "work": [
+    {
+      "company": "Tech Company",
+      "position": "Software Engineer",
+      "location": "San Francisco, CA",
+      "startDate": "2021-01",
+      "endDate": "Present",
+      "highlights": [
+        "Developed REST API serving 1M+ requests daily",
+        "Reduced server response time by 30%"
+      ]
+    }
+  ],
+ "projects": [
+    {
+      "name": "Personal Website",
+      "url": "github.com/janedoe/website",
+      "description": "Responsive portfolio website built with React",
+      "highlights": [
+        "Implemented custom animations",
+        "Optimized for mobile devices"
+       ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Technology",
+      "area": "Computer Science",
+      "graduationYear": "2020"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["JavaScript", "Python", "Java"]
+    },
+    {
+      "name": "Tools",
+      "keywords": ["React", "Git", "Docker"]
+    }
+  ]
+}
+```
 
-1. Clone this repository
-
-2. Make the Python script executable:
-   ```bash
-   chmod +x scripts/generate_resume.py
-   ```
-
-3. Edit `data.json` with resume information
-
-4. Generate resume:
+2. Generate resume:
    ```bash
    make
    ```
 
-5. Resume PDF can be found in the `build` directory:
+3. Resume PDF can be found in the `build` directory:
    - `build/resume.html` - HTML version
    - `build/resume.pdf` - PDF version
 
@@ -34,11 +77,11 @@ Simple JSON to PDF resume using Chrome's headless rendering
 
 ```
 resume/
-├── data.json         # Your resume content
+├── data.json         # Resume content
 ├── Makefile          # Build automation
-├── scripts/          # Code for generating the resume
+├── scripts/           
 │   └── generate_resume.py  # JSON to HTML converter
-├── styles/           # Visual styling
+├── styles/           
 │   └── resume.css    # CSS styling for the resume
 └── build/            # Generated output (created by make)
     ├── resume.html   # HTML version
