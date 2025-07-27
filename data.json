@@ -7,28 +7,40 @@
     "work": [
       {
         "company": "General Motors",
-        "position": "Big Data Platform Software Engineer",
         "location": "Austin, TX",
-        "startDate": "2021-02-01",
-        "endDate": "Present",
-        "highlights": [
-          "Contributed to migration from Cloudera to GM's custom Hadoop platform (GMDP), generating $1.2M annual cost savings.",
-          "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.",
-          "Architected and implemented Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
-          "Contributed to Apache Ambari by implementing Livy as service in the Bigtop stack, enabling proper integration with Ambari deployment, configuration management, and monitoring. (PR #3790)",
-          "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
-        ]
+        "positions": [
+        {
+          "title": "Data Engineer, Connected Vehicle Data Engineering",
+          "startDate": "2025-01-01",
+          "endDate": "Present",
+          "highlights": [
+            "Developed and configured automated data collection for connected vehicles, enabling real-time monitoring of embedded vehicle systems across production fleets.",
+            "Conducted vehicle testing and validation in sandbox environments to ensure data collection accuracy before production deployment.",
+            "Implemented ETL data pipelines for vehicle configuration metadata management."
+          ]
+        },
+        {
+          "title": "Software Engineer, Big Data Engineering & Infrastructure",
+          "startDate": "2021-02-21",
+          "endDate": "2024-12-30",
+          "highlights": [
+            "Contributed to migration from Cloudera to GM's custom Hadoop platform (GMDP), generating $1.2M annual cost savings.",
+            "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.",
+            "Architected and implemented Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
+            "Contributed to Apache Ambari by implementing Livy as service in the Bigtop stack, enabling proper integration with Ambari deployment, configuration management, and monitoring. (PR #3790)",
+            "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
+          ]
+        }
+      ]
       },
       {
         "company": "Lawrence Livermore National Lab",
-        "position": "Software Engineering Intern",
+        "position": "Software Test Engineering Intern",
         "location": "Livermore, CA",
         "startDate": "2019-06-01",
         "endDate": "2019-09-01",
         "highlights": [
-          "Improved automated testing and software integration framework",
-          "Contributed to JUnit test suite and provided technical documentation",
-          "Prototyped new test automation processess"
+          "Improved automated testing by contbuting to JUnit test suite and providing technical documentation"
         ]
       },
       {
