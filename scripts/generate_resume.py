@@ -73,24 +73,75 @@ def generate_resume_html(json_file, css_file, output_file):
     html.append('    <h2>EXPERIENCE</h2>')
     
     for job in data.get('work', []):
-        html.append('    <div class="job">')
-        html.append('      <div class="job-header">')
-        html.append(f'        <span class="job-company">{job["company"]}</span>')
-        html.append(f'        <span class="job-date">{format_date(job.get("startDate", ""))} - {format_date(job.get("endDate", ""))}</span>')
-        html.append('      </div>')
-        
-        html.append('      <div class="job-title-row">')
-        html.append(f'        <span class="job-title">{job.get("position", "")}</span>')
-        html.append(f'        <span class="job-location">{job.get("location", "")}</span>')
-        html.append('      </div>')
-        
-        # Use proper list for bullet points
-        html.append('      <ul class="job-details">')
-        for highlight in job.get('highlights', []):
-            html.append(f'        <li>{highlight}</li>')
-        html.append('      </ul>')
-        
-        html.append('    </div>')
+        # Check if this uses the new format (multiple positions) or old format (single position)
+        if 'positions' in job:
+            # New format: multiple positions under one company
+            company = job.get('company', '')
+            location = job.get('location', '')
+            positions = job['positions']
+            
+            # Calculate overall date range (from earliest start to latest end)
+            start_dates = [pos.get('startDate', '') for pos in positions if pos.get('startDate')]
+            end_dates = [pos.get('endDate', '') for pos in positions if pos.get('endDate')]
+            
+            # Find the earliest start date and latest end date
+            overall_start = min(start_dates) if start_dates else ''
+            overall_end = max(end_dates) if end_dates else ''
+            if 'Present' in end_dates:
+                overall_end = 'Present'
+            
+            html.append('    <div class="job">')
+            html.append('      <div class="job-header">')
+            html.append(f'        <span class="job-company">{company}</span>')
+            html.append(f'        <span class="job-date">{format_date(overall_start)} - {format_date(overall_end)}</span>')
+            html.append('      </div>')
+            
+            # Show all positions under this company
+            for i, position in enumerate(positions):
+                title = position.get('title', '')
+                start_date = position.get('startDate', '')
+                end_date = position.get('endDate', '')
+                
+                if i == 0:
+                    # First position gets the location on the right
+                    html.append('      <div class="job-title-row">')
+                    html.append(f'        <span class="job-title">{title} ({format_date(start_date)} - {format_date(end_date)})</span>')
+                    html.append(f'        <span class="job-location">{location}</span>')
+                    html.append('      </div>')
+                else:
+                    # Additional positions just show title and dates
+                    html.append('      <div class="job-title-row">')
+                    html.append(f'        <span class="job-title">{title} ({format_date(start_date)} - {format_date(end_date)})</span>')
+                    html.append('        <span class="job-location"></span>')
+                    html.append('      </div>')
+                
+                # Add highlights for this position
+                html.append('      <ul class="job-details">')
+                for highlight in position.get('highlights', []):
+                    html.append(f'        <li>{highlight}</li>')
+                html.append('      </ul>')
+            
+            html.append('    </div>')
+        else:
+            # Old format: single position (maintain exact original behavior)
+            html.append('    <div class="job">')
+            html.append('      <div class="job-header">')
+            html.append(f'        <span class="job-company">{job["company"]}</span>')
+            html.append(f'        <span class="job-date">{format_date(job.get("startDate", ""))} - {format_date(job.get("endDate", ""))}</span>')
+            html.append('      </div>')
+            
+            html.append('      <div class="job-title-row">')
+            html.append(f'        <span class="job-title">{job.get("position", "")}</span>')
+            html.append(f'        <span class="job-location">{job.get("location", "")}</span>')
+            html.append('      </div>')
+            
+            # Use proper list for bullet points
+            html.append('      <ul class="job-details">')
+            for highlight in job.get('highlights', []):
+                html.append(f'        <li>{highlight}</li>')
+            html.append('      </ul>')
+            
+            html.append('    </div>')
     
     html.append('  </section>')
     
@@ -126,7 +177,7 @@ def generate_resume_html(json_file, css_file, output_file):
             html.append('    <div class="education">')
             html.append('      <div class="edu-header">')
             html.append(f'        <span class="edu-institution">{edu.get("institution", "")}</span>')
-            html.append(f'        <span class="edu-date">{edu.get("graduationYear", )}</span>')
+            html.append(f'        <span class="edu-date">{edu.get("graduationYear", "")}</span>')
             html.append('      </div>')
             
             html.append(f'      <div class="edu-degree">{edu.get("studyType", "")} in {edu.get("area", "")}</div>')
