@@ -11,7 +11,7 @@
         "positions": [
         {
           "title": "Data Engineer, Connected Vehicle Data Engineering",
-          "startDate": "2025-01-01",
+          "startDate": "2025-04-01",
           "endDate": "Present",
           "highlights": [
             "Developed and configured automated data collection for connected vehicles, enabling real-time monitoring of embedded vehicle systems across production fleets.",
@@ -22,12 +22,13 @@
         {
           "title": "Software Engineer, Big Data Engineering & Infrastructure",
           "startDate": "2021-02-21",
-          "endDate": "2024-12-30",
+          "endDate": "2025-04-01",
           "highlights": [
-            "Contributed to migration from Cloudera to GM's custom Hadoop platform (GMDP), generating $1.2M annual cost savings.",
             "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.",
-            "Architected and implemented Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
-            "Contributed to Apache Ambari by implementing Livy as service in the Bigtop stack, enabling proper integration with Ambari deployment, configuration management, and monitoring. (PR #3790)",
+            "Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.",
+            "Contributed to Apache Ambari and Apache Bigtop open-source projects by implementing Livy service integration and service management (Ambari PR#3790, Bigtop PR#1282).",
+            "Integrated open-source Hadoop components (Apache Ambari, Livy, Tez UI) into GM's custom Hadoop platform, collaborating with platform engineers to migrate from Cloudera Hadoop Platform and reduce annual infrastructure costs by $1.2M.",
+            "Develop Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
             "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
           ]
         }
@@ -65,13 +66,17 @@
       }
     ],
     "skills": [
-      {
+      {      
         "name": "Languages",
-        "keywords": ["C++", "Java", "Python", "Javascript", "HTML", "CSS"]
+        "keywords": ["Python", "Java", "Bash", "SQL"]
       },
       {
-        "name": "Frameworks and Tools",
-        "keywords": ["ReactJS", "NodeJS", "Flask", "SQL", "git", "Docker", "REST", "Agile"]
+        "name": "DevOps and Automation",
+        "keywords": ["Docker", "CICD Pipelines", "deployment automation", "configuraiton management", "scripting"]
+      },
+      {
+        "name": "Build Tools",
+        "keywords": ["Maven","Gradle","Git","RPM","Make"]
       }
     ]
   }
