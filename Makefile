@@ -23,6 +23,9 @@ $(OUTPUT_PDF): $(OUTPUT_HTML)
 	elif command -v google-chrome >/dev/null 2>&1; then \
 		google-chrome --headless --disable-gpu --no-pdf-header-footer \
 		--print-to-pdf=$(OUTPUT_PDF) "file://$(shell pwd)/$(OUTPUT_HTML)"; \
+	elif command -v chromium >/dev/null 2>&1; then \
+		chromium --headless --disable-gpu --no-pdf-header-footer \
+		--print-to-pdf=$(OUTPUT_PDF) "file://$(shell pwd)/$(OUTPUT_HTML)"; \
 	elif command -v wkhtmltopdf >/dev/null 2>&1; then \
 		wkhtmltopdf --no-header-line --no-footer-line --no-outline \
 		--margin-top 0.5in --margin-right 0.75in --margin-bottom 0.5in --margin-left 0.75in \
