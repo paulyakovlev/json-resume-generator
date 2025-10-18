@@ -28,32 +28,24 @@
             "Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.",
             "Contributed to Apache Ambari and Apache Bigtop open-source projects by implementing Livy service integration and service management (Ambari PR#3790, Bigtop PR#1282).",
             "Integrated open-source Hadoop components (Apache Ambari, Livy, Tez UI) into GM's custom Hadoop platform, collaborating with platform engineers to migrate from Cloudera Hadoop Platform and reduce annual infrastructure costs by $1.2M.",
-            "Develop Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
+            "Developed Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.",
             "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
           ]
         }
       ]
-      },
+      }
+    ],
+    "projects": [
       {
-        "company": "Lawrence Livermore National Lab",
-        "position": "Software Test Engineering Intern",
-        "location": "Livermore, CA",
-        "startDate": "2019-06-01",
-        "endDate": "2019-09-01",
+        "name": "Long Marine Stranding Map",
+        "url": "https://github.com/lmlstrandingnetwork/lml-stranding-map",
         "highlights": [
-          "Improved automated testing by contbuting to JUnit test suite and providing technical documentation"
-        ]
-      },
-      {
-        "company": "remote.it",
-        "position": "Software Engineering Intern",
-        "location": "Palo Alto, CA",
-        "startDate": "2018-05-01",
-        "endDate": "2019-06-01",
-        "highlights": [
-          "Prototyped user-end web portals for device monitoring and management",
-          "Wrote a library of user-end Python and Shell scripts to manage IoT edge devices",
-          "Provided technical documentation for internal and end-user software tools"
+          "Built full-stack geospatial web application for UCSC Long Marine Lab scientists to digitize field documentation of marine mammal strandings, replacing manual paper forms with structured data collection including location tracking, photo uploads, and filterable search capabilities.",
+          "Implemented interactive mapping enabling scientists to filter stranding records by species, year, age, and location with real-time visualization.",
+          "Established separate dev/prod environments with CI/CD automation and conducted code reviews to maintain code quality throughout development.",
+          "Led regular stakeholder meetings with lab technicians to gather requirements and iterate on features based on feedback.",
+          "Mentored next cohort of engineering students on codebase, development practices, and technical implementation.",
+          "Technologies: React, Node.js, Mapbox, Algolia, Firebase, Heroku, Git"
         ]
       }
     ],
@@ -68,15 +60,15 @@
     "skills": [
       {      
         "name": "Languages",
-        "keywords": ["Python", "Java", "Bash", "SQL"]
+        "keywords": ["Python", "Java", "Bash", "SQL", "Javascript"]
       },
       {
         "name": "DevOps and Automation",
-        "keywords": ["Docker", "CICD Pipelines", "deployment automation", "configuraiton management", "scripting"]
+        "keywords": ["Docker", "CI/CD Pipelines", "deployment automation", "configuration management", "scripting"]
       },
       {
         "name": "Build Tools",
         "keywords": ["Maven","Gradle","Git","RPM","Make"]
       }
     ]
-  }
+}

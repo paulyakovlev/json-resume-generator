@@ -144,8 +144,8 @@ def generate_resume_html(json_file, css_file, output_file):
             html.append('    </div>')
     
     html.append('  </section>')
-    
-    # Projects
+
+     # Projects
     if 'projects' in data:
         html.append('  <section>')
         html.append('    <h2>PROJECTS</h2>')
@@ -154,20 +154,21 @@ def generate_resume_html(json_file, css_file, output_file):
             html.append('    <div class="project">')
             html.append('      <div class="project-header">')
             html.append(f'        <span class="project-name">{project.get("name", "")}</span>')
-            html.append(f'        <span class="project-link">{project.get("url", "")}</span>')
+            
+            # Only show URL if it exists and is not empty
+            url = project.get("url", "")
+            if url:
+                html.append(f'        <span class="project-link">{url}</span>')
             html.append('      </div>')
             
-            html.append(f'      <div class="project-tech">{project.get("technologies", "")}</div>')
-            
-            # Use proper list for bullet points
+           # Use proper list for bullet points - just like work section
             html.append('      <ul class="project-details">')
-            html.append(f'        <li>{project.get("description", "")}</li>')
-            html.append('      </ul>')
-            
-            html.append('    </div>')
-        
-        html.append('  </section>')
+            for highlight in project.get('highlights', []):
+                html.append(f'        <li>{highlight}</li>')
+            html.append('      </ul>')        
+        html.append('    </div>')
     
+    html.append('  </section>')
     # Education
     if 'education' in data:
         html.append('  <section>')
