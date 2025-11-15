@@ -180,27 +180,33 @@ a {
     <div class="job">
       <div class="job-header">
         <span class="job-company">General Motors</span>
-        <span class="job-date">February 2021 - Present</span>
+        <span class="job-date">April 2025 - Present</span>
       </div>
       <div class="job-title-row">
-        <span class="job-title">Data Engineer, Connected Vehicle Data Engineering (April 2025 - Present)</span>
+        <span class="job-title">Data Engineer, Connected Vehicle Data Engineering</span>
         <span class="job-location">Austin, TX</span>
       </div>
       <ul class="job-details">
-        <li>Developed and configured automated data collection for connected vehicles, enabling real-time monitoring of embedded vehicle systems across production fleets.</li>
-        <li>Conducted vehicle testing and validation in sandbox environments to ensure data collection accuracy before production deployment.</li>
-        <li>Implemented ETL data pipelines for vehicle configuration metadata management.</li>
+        <li>Implement connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.</li>
+        <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry for billing systems.</li>
+        <li>Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, coordinated cross-functional deployment and permissions, enabling PowerBI analytics on production configurations.</li>
       </ul>
+    </div>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">General Motors</span>
+        <span class="job-date">February 2021 - April 2025</span>
+      </div>
       <div class="job-title-row">
-        <span class="job-title">Software Engineer, Big Data Engineering & Infrastructure (February 2021 - April 2025)</span>
-        <span class="job-location"></span>
+        <span class="job-title">Software Engineer, Big Data Engineering & Infrastructure</span>
+        <span class="job-location">Austin, TX</span>
       </div>
       <ul class="job-details">
         <li>Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.</li>
         <li>Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.</li>
         <li>Contributed to Apache Ambari and Apache Bigtop open-source projects by implementing Livy service integration and service management (Ambari PR#3790, Bigtop PR#1282).</li>
-        <li>Integrated open-source Hadoop components (Apache Ambari, Livy, Tez UI) into GM's custom Hadoop platform, collaborating with platform engineers to migrate from Cloudera Hadoop Platform and reduce annual infrastructure costs by $1.2M.</li>
-        <li>Developed Oozie ETL pipeline for Ranger audit logs to Parquet format, enabling PowerBI analytics across production clusters.</li>
+        <li>Integrated open-source Hadoop components (Sqoop, Livy, Tez UI) into GM's custom Hadoop platform, collaborating with platform engineers to migrate from Cloudera Hadoop Platform and reduce annual costs by $1.2M.</li>
+        <li>Developed Python-based ETL pipeline converting cluster usage audit logs to Parquet format and ingesting into Hive tables with Oozie automation, enabling PowerBI analytics to support data cleanup decisions during cloud migration planning.</li>
         <li>Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers.</li>
       </ul>
     </div>
@@ -209,16 +215,13 @@ a {
     <h2>PROJECTS</h2>
     <div class="project">
       <div class="project-header">
-        <span class="project-name">Long Marine Stranding Map</span>
+        <span class="project-name">Long Marine Lab Stranding Map</span>
         <span class="project-link">https://github.com/lmlstrandingnetwork/lml-stranding-map</span>
       </div>
       <ul class="project-details">
-        <li>Built full-stack geospatial web application for UCSC Long Marine Lab scientists to digitize field documentation of marine mammal strandings, replacing manual paper forms with structured data collection including location tracking, photo uploads, and filterable search capabilities.</li>
-        <li>Implemented interactive mapping enabling scientists to filter stranding records by species, year, age, and location with real-time visualization.</li>
-        <li>Established separate dev/prod environments with CI/CD automation and conducted code reviews to maintain code quality throughout development.</li>
-        <li>Led regular stakeholder meetings with lab technicians to gather requirements and iterate on features based on feedback.</li>
+        <li>Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search</li>
         <li>Mentored next cohort of engineering students on codebase, development practices, and technical implementation.</li>
-        <li>Technologies: React, Node.js, Mapbox, Algolia, Firebase, Heroku, Git</li>
+        <li>Integrated Mapbox for interactive mapping, Algolia for search, and Firebase backend; deployed to Heroku</li>
       </ul>
     </div>
   </section>
@@ -227,7 +230,7 @@ a {
     <div class="education">
       <div class="edu-header">
         <span class="edu-institution">University of California, Santa Cruz</span>
-        <span class="edu-date">Class of 2020</span>
+        <span class="edu-date">2020</span>
       </div>
       <div class="edu-degree">Bachelor's Degree in Computer Science</div>
     </div>
@@ -235,13 +238,16 @@ a {
   <section>
     <h2>SKILLS</h2>
     <div class="skill">
-      <span class="skills-category">Languages:</span> Python, Java, Bash, SQL, Javascript
+      <span class="skills-category">Languages:</span> Python, Java, Bash, SQL, JavaScript
     </div>
     <div class="skill">
-      <span class="skills-category">DevOps and Automation:</span> Docker, CI/CD Pipelines, deployment automation, configuration management, scripting
+      <span class="skills-category">Backend & Integration:</span> REST APIs, ETL Pipelines, Kafka, Databricks, Node.js, Express, Docker
     </div>
     <div class="skill">
-      <span class="skills-category">Build Tools:</span> Maven, Gradle, Git, RPM, Make
+      <span class="skills-category">Data & Tools:</span> SQL, PowerBI, Hive, Apache Hadoop, Apache Ambari, Oracle
+    </div>
+    <div class="skill">
+      <span class="skills-category">DevOps:</span> Git, CI/CD, Azure DevOps, Maven, Gradle, Jenkins, RPM
     </div>
   </section>
 </body>
