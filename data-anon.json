@@ -1,0 +1,75 @@
+{
+  "basics": {
+    "name": "FIRST LAST",
+    "email": "email@example.com",
+    "github": "github.com/username"
+  },
+  "work": [
+    {
+      "company": "Major Automotive Company",
+      "location": "[City, State]",
+      "position": "Data Engineer, Connected Vehicle Data Engineering",
+      "startDate": "Start Date",
+      "endDate": "Present",
+      "highlights": [
+        "Implement connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.",
+        "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry for billing systems.",
+        "Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, coordinated cross-functional deployment and permissions, enabling PowerBI analytics on production configurations."
+      ]
+    },
+    {
+      "company": "Major Automotive Company",
+      "location": "[City, State]",
+      "position": "Software Engineer, Big Data Engineering & Infrastructure",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "highlights": [
+        "Led migration from proprietary SQL workflow interface to open-source alternative, eliminating closed-source dependencies and licensing costs.",
+        "Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.",
+        "Contributed internal platform enhancements back to upstream open-source projects (Apache Ambari, Apache Bigtop), with multiple pull requests accepted into mainline codebases.",
+        "Integrated open-source Hadoop components in to custom enterprise Hadoop platform, collaborating with platform engineers to migrate from cendor distribution and reduce annual licensing costs by $1.2M.",
+        "Developed Python-based ETL pipeline converting cluster usage audit logs to Parquet format and ingesting into Hive tables with Oozie automation, enabling PowerBI analytics to support data cleanup decisions during cloud migration planning.",
+        "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Marine Research Data Platform",
+      "url": "",
+      "highlights": [
+        "Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search.",
+        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development.",        
+        "Mentored next cohort of engineering students on codebase, development practices, and technical implementation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University",
+      "area": "Computer Science",
+      "studyType": "Bachelor's Degree",
+      "graduationYear": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": ["Python", "Java", "Bash", "SQL", "Javascript"]
+    },
+    {
+      "name": "DevOps and Automation",
+      "keywords": [
+        "Docker",
+        "CI/CD Pipelines",
+        "deployment automation",
+        "configuration management",
+        "scripting"
+      ]
+    },
+    {
+      "name": "Build Tools",
+      "keywords": ["Maven", "Gradle", "Git", "RPM", "Make"]
+    }
+  ]
+}

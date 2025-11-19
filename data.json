@@ -39,8 +39,8 @@
       "url": "https://github.com/lmlstrandingnetwork/lml-stranding-map",
       "highlights": [
         "Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search",
-        "Mentored next cohort of engineering students on codebase, development practices, and technical implementation.",
-        "Integrated Mapbox for interactive mapping, Algolia for search, and Firebase backend; deployed to Heroku"
+        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development",        
+        "Mentored next cohort of engineering students on codebase, development practices, and technical implementation."
       ]
     }
   ],

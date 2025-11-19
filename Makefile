@@ -40,6 +40,38 @@ $(OUTPUT_PDF): $(OUTPUT_HTML)
 	fi
 	@[ -f $(OUTPUT_PDF) ] && echo "Resume generated: $(OUTPUT_PDF)" || echo "Please generate PDF manually"
 
+# Generate anonymized resume
+ANON_JSON = data-anon.json
+ANON_HTML = $(OUTPUT_DIR)/resume-anon.html
+ANON_PDF = $(OUTPUT_DIR)/resume-anon.pdf
+
+anon: $(ANON_PDF)
+
+$(ANON_HTML): $(ANON_JSON) scripts/generate_resume.py $(CSS_FILE)
+	@mkdir -p $(OUTPUT_DIR)
+	@echo "Generating anonymized HTML from JSON..."
+	@python3 ./scripts/generate_resume.py $(ANON_JSON) $(CSS_FILE) $(ANON_HTML)
+
+$(ANON_PDF): $(ANON_HTML)
+	@echo "Generating anonymized PDF..."
+	@if command -v /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome >/dev/null 2>&1; then \
+		/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --headless --disable-gpu \
+		--no-pdf-header-footer --print-to-pdf=$(ANON_PDF) "file://$(shell pwd)/$(ANON_HTML)"; \
+	elif command -v google-chrome >/dev/null 2>&1; then \
+		google-chrome --headless --disable-gpu --no-pdf-header-footer \
+		--print-to-pdf=$(ANON_PDF) "file://$(shell pwd)/$(ANON_HTML)"; \
+	elif command -v chromium >/dev/null 2>&1; then \
+		chromium --headless --disable-gpu --no-pdf-header-footer \
+		--print-to-pdf=$(ANON_PDF) "file://$(shell pwd)/$(ANON_HTML)"; \
+	elif command -v wkhtmltopdf >/dev/null 2>&1; then \
+		wkhtmltopdf --no-header-line --no-footer-line --no-outline \
+		--margin-top 0.5in --margin-right 0.75in --margin-bottom 0.5in --margin-left 0.75in \
+		$(ANON_HTML) $(ANON_PDF); \
+	else \
+		echo "No suitable PDF generator found."; \
+	fi
+	@[ -f $(ANON_PDF) ] && echo "Anonymized resume generated: $(ANON_PDF)" || echo "Please generate PDF manually"
+
 # Clean build artifacts
 clean:
 	@echo "Cleaning build artifacts..."
