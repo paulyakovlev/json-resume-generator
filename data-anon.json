@@ -12,9 +12,9 @@
       "startDate": "Start Date",
       "endDate": "Present",
       "highlights": [
-        "Implement connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.",
+        "Implemented connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.",
         "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry for billing systems.",
-        "Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, coordinated cross-functional deployment and permissions, enabling PowerBI analytics on production configurations."
+        "Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, enabling PowerBI analytics on production configurations."
       ]
     },
     {
@@ -26,10 +26,10 @@
       "highlights": [
         "Led migration from proprietary SQL workflow interface to open-source alternative, eliminating closed-source dependencies and licensing costs.",
         "Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.",
-        "Contributed internal platform enhancements back to upstream open-source projects (Apache Ambari, Apache Bigtop), with multiple pull requests accepted into mainline codebases.",
-        "Integrated open-source Hadoop components in to custom enterprise Hadoop platform, collaborating with platform engineers to migrate from cendor distribution and reduce annual licensing costs by $1.2M.",
-        "Developed Python-based ETL pipeline converting cluster usage audit logs to Parquet format and ingesting into Hive tables with Oozie automation, enabling PowerBI analytics to support data cleanup decisions during cloud migration planning.",
-        "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
+        "Contributed internal platform enhancements back to upstream open-source projects, with multiple pull requests accepted into mainline codebases.",
+        "Integrated open-source Hadoop components into custom enterprise Hadoop platform, collaborating with platform engineers to replace vendor solutionand reduce annual licensing costs by $1.2M.",
+        "Built automated Oozie ETL pipeline converting cluster audit logs to Parquet and ingesting into Hive tables, enabling PowerBI analytics for cloud migration planning.",
+        "Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps."
       ]
     }
   ],
@@ -39,7 +39,7 @@
       "url": "",
       "highlights": [
         "Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search.",
-        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development.",        
+        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development.",
         "Mentored next cohort of engineering students on codebase, development practices, and technical implementation."
       ]
     }
@@ -55,21 +55,23 @@
   "skills": [
     {
       "name": "Languages",
-      "keywords": ["Python", "Java", "Bash", "SQL", "Javascript"]
+      "keywords": ["Python", "Java", "Bash", "SQL", "JavaScript"]
     },
     {
-      "name": "DevOps and Automation",
+      "name": "Backend & Data",
       "keywords": [
-        "Docker",
-        "CI/CD Pipelines",
-        "deployment automation",
-        "configuration management",
-        "scripting"
+        "Node.js",
+        "Databricks",
+        "Azure",
+        "Oracle",
+        "Hadoop",
+        "PowerBI",
+        "CI/CD"
       ]
     },
     {
-      "name": "Build Tools",
-      "keywords": ["Maven", "Gradle", "Git", "RPM", "Make"]
+      "name": "Development Tools",
+      "keywords": ["Git","Docker","Maven","Gradle","RPM","Linux"]
     }
   ]
 }

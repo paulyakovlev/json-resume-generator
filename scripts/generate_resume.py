@@ -46,26 +46,27 @@ def generate_resume_html(json_file, css_file, output_file):
     
     # Contact info
     html.append('  <div class="contact-info">')
-    html.append(f'    <p>{basics.get("email", "")}</p>')
-    
-    # Create the website and github line
+
+    email = basics.get('email', '')
     website = basics.get('website', '')
     github = basics.get('github', '')
-    
+
     # Look for GitHub in profiles if it doesn't exist directly
     if not github and 'profiles' in basics:
         for profile in basics['profiles']:
             if profile.get('network', '').lower() == 'github':
                 github = profile.get('url', '')
                 break
-    
-    if website and github:
-        html.append(f'    <p>{website} ⋄ {github}</p>')
-    elif website:
+
+    # Email and GitHub on one line
+    contact_parts = [p for p in [email, github] if p]
+    if contact_parts:
+        html.append(f'    <p>{" ⋄ ".join(contact_parts)}</p>')
+
+    # Website on separate line if present
+    if website:
         html.append(f'    <p>{website}</p>')
-    elif github:
-        html.append(f'    <p>{github}</p>')
-        
+
     html.append('  </div>')
     
     # Experience

@@ -67,6 +67,9 @@ JSON to PDF resume using Chrome's headless rendering
 2. Generate resume:
    ```bash
    make
+
+   ### To generate anonymized resume from resume-anon.json
+   make anon
    ```
 
 3. Resume PDF can be found in the `build` directory:

@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Calibri', 'Carlito', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     color: #000;
@@ -172,8 +172,7 @@ a {
 <body>
   <h1>PAVEL YAKOVLEV</h1>
   <div class="contact-info">
-    <p>yvpavel@gmail.com</p>
-    <p>github.com/paulyakovlev</p>
+    <p>yvpavel@gmail.com ⋄ github.com/paulyakovlev</p>
   </div>
   <section>
     <h2>EXPERIENCE</h2>
@@ -187,9 +186,9 @@ a {
         <span class="job-location">Austin, TX</span>
       </div>
       <ul class="job-details">
-        <li>Implement connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.</li>
-        <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry for billing systems.</li>
-        <li>Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, coordinated cross-functional deployment and permissions, enabling PowerBI analytics on production configurations.</li>
+        <li>Implemented connected vehicle telemetry collection by configuring data elements and event triggers, deploying to production fleets and validating accuracy using SQL, Kafka, and Databricks</li>
+        <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry</li>
+        <li>Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics on production configurations</li>
       </ul>
     </div>
     <div class="job">
@@ -202,12 +201,11 @@ a {
         <span class="job-location">Austin, TX</span>
       </div>
       <ul class="job-details">
-        <li>Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.</li>
-        <li>Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.</li>
-        <li>Contributed to Apache Ambari and Apache Bigtop open-source projects by implementing Livy service integration and service management (Ambari PR#3790, Bigtop PR#1282).</li>
-        <li>Integrated open-source Hadoop components (Sqoop, Livy, Tez UI) into GM's custom Hadoop platform, collaborating with platform engineers to migrate from Cloudera Hadoop Platform and reduce annual costs by $1.2M.</li>
-        <li>Developed Python-based ETL pipeline converting cluster usage audit logs to Parquet format and ingesting into Hive tables with Oozie automation, enabling PowerBI analytics to support data cleanup decisions during cloud migration planning.</li>
-        <li>Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers.</li>
+        <li>Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M</li>
+        <li>Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)</li>
+        <li>Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps</li>
+        <li>Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection</li>
+        <li>Built automated Oozie ETL pipeline converting cluster audit logs to Parquet and ingesting into Hive tables, enabling PowerBI analytics for cloud migration planning</li>
       </ul>
     </div>
   </section>
@@ -221,7 +219,7 @@ a {
       <ul class="project-details">
         <li>Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search</li>
         <li>Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development</li>
-        <li>Mentored next cohort of engineering students on codebase, development practices, and technical implementation.</li>
+        <li>Mentored next cohort of engineering students on codebase, development practices, and technical implementation</li>
       </ul>
     </div>
   </section>
@@ -241,13 +239,10 @@ a {
       <span class="skills-category">Languages:</span> Python, Java, Bash, SQL, JavaScript
     </div>
     <div class="skill">
-      <span class="skills-category">Backend & Integration:</span> REST APIs, ETL Pipelines, Kafka, Databricks, Node.js, Express, Docker
+      <span class="skills-category">Backend & Data:</span> Node.js, Databricks, Azure, Oracle, Hadoop, PowerBI, CI/CD
     </div>
     <div class="skill">
-      <span class="skills-category">Data & Tools:</span> SQL, PowerBI, Hive, Apache Hadoop, Apache Ambari, Oracle
-    </div>
-    <div class="skill">
-      <span class="skills-category">DevOps:</span> Git, CI/CD, Azure DevOps, Maven, Gradle, Jenkins, RPM
+      <span class="skills-category">Development Tools:</span> Git, Docker, Maven, Gradle, RPM, Linux
     </div>
   </section>
 </body>

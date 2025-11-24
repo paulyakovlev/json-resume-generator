@@ -19,7 +19,7 @@
 }
 
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Calibri', 'Carlito', sans-serif;
     max-width: 800px;
     margin: 0 auto;
     color: #000;
@@ -172,8 +172,7 @@ a {
 <body>
   <h1>FIRST LAST</h1>
   <div class="contact-info">
-    <p>email@example.com</p>
-    <p>github.com/username</p>
+    <p>email@example.com ⋄ github.com/username</p>
   </div>
   <section>
     <h2>EXPERIENCE</h2>
@@ -187,9 +186,9 @@ a {
         <span class="job-location">[City, State]</span>
       </div>
       <ul class="job-details">
-        <li>Implement connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.</li>
+        <li>Implemented connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.</li>
         <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry for billing systems.</li>
-        <li>Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, coordinated cross-functional deployment and permissions, enabling PowerBI analytics on production configurations.</li>
+        <li>Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, enabling PowerBI analytics on production configurations.</li>
       </ul>
     </div>
     <div class="job">
@@ -204,10 +203,10 @@ a {
       <ul class="job-details">
         <li>Led migration from proprietary SQL workflow interface to open-source alternative, eliminating closed-source dependencies and licensing costs.</li>
         <li>Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.</li>
-        <li>Contributed internal platform enhancements back to upstream open-source projects (Apache Ambari, Apache Bigtop), with multiple pull requests accepted into mainline codebases.</li>
-        <li>Integrated open-source Hadoop components in to custom enterprise Hadoop platform, collaborating with platform engineers to migrate from cendor distribution and reduce annual licensing costs by $1.2M.</li>
-        <li>Developed Python-based ETL pipeline converting cluster usage audit logs to Parquet format and ingesting into Hive tables with Oozie automation, enabling PowerBI analytics to support data cleanup decisions during cloud migration planning.</li>
-        <li>Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers.</li>
+        <li>Contributed internal platform enhancements back to upstream open-source projects, with multiple pull requests accepted into mainline codebases.</li>
+        <li>Integrated open-source Hadoop components into custom enterprise Hadoop platform, collaborating with platform engineers to replace vendor solutionand reduce annual licensing costs by $1.2M.</li>
+        <li>Built automated Oozie ETL pipeline converting cluster audit logs to Parquet and ingesting into Hive tables, enabling PowerBI analytics for cloud migration planning.</li>
+        <li>Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps.</li>
       </ul>
     </div>
   </section>
@@ -237,13 +236,13 @@ a {
   <section>
     <h2>SKILLS</h2>
     <div class="skill">
-      <span class="skills-category">Languages:</span> Python, Java, Bash, SQL, Javascript
+      <span class="skills-category">Languages:</span> Python, Java, Bash, SQL, JavaScript
     </div>
     <div class="skill">
-      <span class="skills-category">DevOps and Automation:</span> Docker, CI/CD Pipelines, deployment automation, configuration management, scripting
+      <span class="skills-category">Backend & Data:</span> Node.js, Databricks, Azure, Oracle, Hadoop, PowerBI, CI/CD
     </div>
     <div class="skill">
-      <span class="skills-category">Build Tools:</span> Maven, Gradle, Git, RPM, Make
+      <span class="skills-category">Development Tools:</span> Git, Docker, Maven, Gradle, RPM, Linux
     </div>
   </section>
 </body>

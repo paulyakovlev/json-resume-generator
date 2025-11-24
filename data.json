@@ -12,9 +12,9 @@
       "startDate": "2025-04-01",
       "endDate": "Present",
       "highlights": [
-        "Implement connected vehicle telemetry collection by configuring data element definitions and event-based triggers, deploying to production fleets via automated tools, and validating data accuracy using SQL, Kafka, and Databricks.",
-        "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry for billing systems.",
-        "Developed Python ETL pipeline parsing and combining CSV/XML files from Git repository into Databricks tables, coordinated cross-functional deployment and permissions, enabling PowerBI analytics on production configurations."
+        "Implemented connected vehicle telemetry collection by configuring data elements and event triggers, deploying to production fleets and validating accuracy using SQL, Kafka, and Databricks",
+        "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry",
+        "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics on production configurations"
       ]
     },
     {
@@ -24,12 +24,11 @@
       "startDate": "2021-02-21",
       "endDate": "2025-04-01",
       "highlights": [
-        "Led migration from Cloudera Data Analytics Studio to Tez UI, eliminating closed-source dependencies and reducing licensing costs.",
-        "Responded to Log4Shell zero-day vulnerability by developing automated remediation script that scanned and patched production Hadoop clusters, then integrated solution into standard cluster startup process to ensure ongoing protection.",
-        "Contributed to Apache Ambari and Apache Bigtop open-source projects by implementing Livy service integration and service management (Ambari PR#3790, Bigtop PR#1282).",
-        "Integrated open-source Hadoop components (Sqoop, Livy, Tez UI) into GM's custom Hadoop platform, collaborating with platform engineers to migrate from Cloudera Hadoop Platform and reduce annual costs by $1.2M.",
-        "Developed Python-based ETL pipeline converting cluster usage audit logs to Parquet format and ingesting into Hive tables with Oozie automation, enabling PowerBI analytics to support data cleanup decisions during cloud migration planning.",
-        "Enhanced Docker-based Hadoop development environment with local RPM repos and auto-build + deployment of Ambari, significantly improving setup time for developers."
+        "Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M",
+        "Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)",
+        "Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps",
+        "Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection",
+        "Built automated Oozie ETL pipeline converting cluster audit logs to Parquet and ingesting into Hive tables, enabling PowerBI analytics for cloud migration planning"
       ]
     }
   ],
@@ -39,8 +38,8 @@
       "url": "https://github.com/lmlstrandingnetwork/lml-stranding-map",
       "highlights": [
         "Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search",
-        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development",        
-        "Mentored next cohort of engineering students on codebase, development practices, and technical implementation."
+        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development",
+        "Mentored next cohort of engineering students on codebase, development practices, and technical implementation"
       ]
     }
   ],
@@ -58,39 +57,20 @@
       "keywords": ["Python", "Java", "Bash", "SQL", "JavaScript"]
     },
     {
-      "name": "Backend & Integration",
+      "name": "Backend & Data",
       "keywords": [
-        "REST APIs",
-        "ETL Pipelines",
-        "Kafka",
-        "Databricks",
         "Node.js",
-        "Express",
-        "Docker"
-      ]
-    },
-    {
-      "name": "Data & Tools",
-      "keywords": [
-        "SQL",
+        "Databricks",
+        "Azure",
+        "Oracle",
+        "Hadoop",
         "PowerBI",
-        "Hive",
-        "Apache Hadoop",
-        "Apache Ambari",
-        "Oracle"
+        "CI/CD"
       ]
     },
     {
-      "name": "DevOps",
-      "keywords": [
-        "Git",
-        "CI/CD",
-        "Azure DevOps",
-        "Maven",
-        "Gradle",
-        "Jenkins",
-        "RPM"
-      ]
+      "name": "Development Tools",
+      "keywords": ["Git","Docker","Maven","Gradle","RPM","Linux"]
     }
   ]
 }
