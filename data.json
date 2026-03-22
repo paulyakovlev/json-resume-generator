@@ -12,9 +12,9 @@
       "startDate": "2025-04-01",
       "endDate": "Present",
       "highlights": [
-        "Implemented connected vehicle telemetry collection by configuring data elements and event triggers, deploying to production fleets and validating accuracy using SQL, Kafka, and Databricks",
+        "Designed and deployed event-driven data collection systems, processing real-time telemetry across a fleet of 100,000+ connected devices in production",
         "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry",
-        "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics on production configurations"
+        "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics for deployed data collection programs"
       ]
     },
     {
@@ -27,8 +27,7 @@
         "Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M",
         "Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)",
         "Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps",
-        "Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection",
-        "Built automated Oozie ETL pipeline converting cluster audit logs to Parquet and ingesting into Hive tables, enabling PowerBI analytics for cloud migration planning"
+        "Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection"
       ]
     }
   ],
@@ -40,6 +39,14 @@
         "Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search",
         "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development",
         "Mentored next cohort of engineering students on codebase, development practices, and technical implementation"
+      ]
+    },
+    {
+      "name": "Real-Time Transit Data Pipeline",
+      "url": "",
+      "highlights": [
+        "End-to-end data pipeline collecting San Francisco Muni predictions via REST API, storing in PostgreSQL, and visualizing real-time transit patterns through Grafana dashboards",
+        "Deployed on a self-hosted Raspberry Pi cluster, managing real hardware networking and node configuration to run Kubernetes workloads end-to-end"
       ]
     }
   ],
@@ -57,20 +64,16 @@
       "keywords": ["Python", "Java", "Bash", "SQL", "JavaScript"]
     },
     {
-      "name": "Backend & Data",
+      "name": "Technologies",
       "keywords": [
         "Node.js",
+        "Docker",
+        "Kubernetes",
+        "PostgreSQL",
         "Databricks",
         "Azure",
-        "Oracle",
-        "Hadoop",
-        "PowerBI",
         "CI/CD"
       ]
-    },
-    {
-      "name": "Development Tools",
-      "keywords": ["Git","Docker","Maven","Gradle","RPM","Linux"]
     }
   ]
 }
