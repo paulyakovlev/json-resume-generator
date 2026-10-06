@@ -179,14 +179,28 @@ a {
     <div class="job">
       <div class="job-header">
         <span class="job-company">General Motors</span>
-        <span class="job-date">April 2025 - Present</span>
+        <span class="job-date">April 2026 - Present</span>
+      </div>
+      <div class="job-title-row">
+        <span class="job-title">Software Engineer, Data Governance</span>
+        <span class="job-location">Austin, TX</span>
+      </div>
+      <ul class="job-details">
+        <li>Built React and Django internal web application that automates Databricks onboarding — users submit forms and the application executes Databricks API calls to provision workspace access, create Azure AD groups, and manage group membership</li>
+        <li>Administer Databricks platform across multiple workspaces, fulfilling IT requests including user access provisioning, service principal management, catalog permissions, external volume creation, and Azure storage account integration</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-header">
+        <span class="job-company">General Motors</span>
+        <span class="job-date">April 2025 - April 2026</span>
       </div>
       <div class="job-title-row">
         <span class="job-title">Data Engineer, Connected Vehicle Data Engineering</span>
         <span class="job-location">Austin, TX</span>
       </div>
       <ul class="job-details">
-        <li>Implemented connected vehicle telemetry collection by designing event-driven data collection programs, deploying to production vehicle fleets and validating accuracy using SQL, Kafka, and Databricks</li>
+        <li>Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet</li>
         <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry</li>
         <li>Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics for deployed data collection programs</li>
       </ul>
@@ -205,7 +219,6 @@ a {
         <li>Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)</li>
         <li>Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps</li>
         <li>Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection</li>
-        <li>Built automated Oozie ETL pipeline converting cluster audit logs to Parquet and ingesting into Hive tables, enabling PowerBI analytics for cloud migration planning</li>
       </ul>
     </div>
   </section>
@@ -223,12 +236,11 @@ a {
       </ul>
     <div class="project">
       <div class="project-header">
-        <span class="project-name">Real-Time Muni Transit Data Pipeline</span>
+        <span class="project-name">Real-Time Transit Data Pipeline</span>
       </div>
       <ul class="project-details">
-        <li>Built end-to-end data pipeline collecting SF Muni predictions via REST API, storing in PostgreSQL, and visualizing real-time transit patterns through Grafana dashboards</li>
-        <li>Deployed on local Kubernetes cluster (k3d) to gain hands-on experience with container orchestration, pod networking, and declarative infrastructure management</li>
-        <li>Designed modular architecture for extensibility, applying production observability patterns </li>
+        <li>End-to-end data pipeline collecting San Francisco Muni predictions via REST API, storing in PostgreSQL, and visualizing real-time transit patterns through Grafana dashboards</li>
+        <li>Deployed on a self-hosted Raspberry Pi cluster, managing real hardware networking and node configuration to run Kubernetes workloads end-to-end</li>
       </ul>
     </div>
   </section>
@@ -248,10 +260,7 @@ a {
       <span class="skills-category">Languages:</span> Python, Java, Bash, SQL, JavaScript
     </div>
     <div class="skill">
-      <span class="skills-category">Backend & Data:</span> Node.js, Databricks, Azure, Oracle, Hadoop, PowerBI, CI/CD
-    </div>
-    <div class="skill">
-      <span class="skills-category">Development Tools:</span> Git, Docker, Maven, Gradle, RPM, Linux
+      <span class="skills-category">Technologies:</span> Node.js, React, Django, Docker, Kubernetes, PostgreSQL, Databricks, Azure, CI/CD
     </div>
   </section>
 </body>
