@@ -159,3 +159,27 @@ a {
     }
 }
 
+
+/* Multiple positions under one company */
+.position {
+    margin-top: 9px;
+}
+
+.position-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.position-title {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.position-date {
+    text-align: right;
+}
+
+.position ul.job-details {
+    margin-bottom: 2px;
+}

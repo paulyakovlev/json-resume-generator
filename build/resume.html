@@ -167,6 +167,30 @@ a {
 }
 
 
+/* Multiple positions under one company */
+.position {
+    margin-top: 9px;
+}
+
+.position-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1px;
+}
+
+.position-title {
+    font-weight: 600;
+    font-style: italic;
+}
+
+.position-date {
+    text-align: right;
+}
+
+.position ul.job-details {
+    margin-bottom: 2px;
+}
+
   </style>
 </head>
 <body>
@@ -179,35 +203,41 @@ a {
     <div class="job">
       <div class="job-header">
         <span class="job-company">General Motors</span>
-        <span class="job-date">February 2021 - Present</span>
-      </div>
-      <div class="job-title-row">
-        <span class="job-title">Software Engineer, Data Governance (April 2026 - Present)</span>
         <span class="job-location">Austin, TX</span>
       </div>
-      <ul class="job-details">
-        <li>Provide hands-on support for Databricks onboarding and data access requests across a 5,000+ member internal support channel, including workspace provisioning, service principal troubleshooting, Terraform configuration review, and access approval workflows</li>
-        <li>Lead AI help desk rollouts for engineering teams, building conversational intake workflows in Slack that replace form-first requests with guided collection and automated routing, from requirements and proof of concept through testing, training, and launch</li>
-        <li>Build and maintain Databricks ETL pipelines for governance and access control</li>
-      </ul>
-      <div class="job-title-row">
-        <span class="job-title">Data Engineer, Connected Vehicle Data Engineering (April 2025 - April 2026)</span>
-        <span class="job-location"></span>
+      <div class="position">
+        <div class="position-row">
+          <span class="position-title">Software Engineer, Data Governance</span>
+          <span class="position-date">April 2026 - Present</span>
+        </div>
+        <ul class="job-details">
+          <li>Provide hands-on Databricks onboarding and data access support for a 5,000+ member community, including workspace provisioning, service principal troubleshooting, Terraform review, and access approvals</li>
+          <li>Lead AI help desk rollouts for engineering teams, building conversational Slack intake workflows that replace form-first requests with guided collection and automated routing</li>
+          <li>Build and maintain Databricks ETL pipelines for governance and access control</li>
+        </ul>
       </div>
-      <ul class="job-details">
-        <li>Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet</li>
-        <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry</li>
-      </ul>
-      <div class="job-title-row">
-        <span class="job-title">Software Engineer, Big Data Engineering & Infrastructure (February 2021 - April 2025)</span>
-        <span class="job-location"></span>
+      <div class="position">
+        <div class="position-row">
+          <span class="position-title">Data Engineer, Connected Vehicle Data Engineering</span>
+          <span class="position-date">April 2025 - April 2026</span>
+        </div>
+        <ul class="job-details">
+          <li>Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet</li>
+          <li>Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry</li>
+        </ul>
       </div>
-      <ul class="job-details">
-        <li>Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M</li>
-        <li>Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)</li>
-        <li>Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps</li>
-        <li>Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection</li>
-      </ul>
+      <div class="position">
+        <div class="position-row">
+          <span class="position-title">Software Engineer, Big Data Engineering & Infrastructure</span>
+          <span class="position-date">February 2021 - April 2025</span>
+        </div>
+        <ul class="job-details">
+          <li>Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M</li>
+          <li>Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)</li>
+          <li>Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps</li>
+          <li>Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection</li>
+        </ul>
+      </div>
     </div>
   </section>
   <section>

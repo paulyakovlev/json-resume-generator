@@ -14,8 +14,8 @@
           "startDate": "2026-04-01",
           "endDate": "Present",
           "highlights": [
-            "Provide hands-on support for Databricks onboarding and data access requests across a 5,000+ member internal support channel, including workspace provisioning, service principal troubleshooting, Terraform configuration review, and access approval workflows",
-            "Lead AI help desk rollouts for engineering teams, building conversational intake workflows in Slack that replace form-first requests with guided collection and automated routing, from requirements and proof of concept through testing, training, and launch",
+            "Provide hands-on Databricks onboarding and data access support for a 5,000+ member community, including workspace provisioning, service principal troubleshooting, Terraform review, and access approvals",
+            "Lead AI help desk rollouts for engineering teams, building conversational Slack intake workflows that replace form-first requests with guided collection and automated routing",
             "Build and maintain Databricks ETL pipelines for governance and access control"
           ]
         },

@@ -94,34 +94,25 @@ def generate_resume_html(json_file, css_file, output_file):
             html.append('    <div class="job">')
             html.append('      <div class="job-header">')
             html.append(f'        <span class="job-company">{company}</span>')
-            html.append(f'        <span class="job-date">{format_date(overall_start)} - {format_date(overall_end)}</span>')
+            html.append(f'        <span class="job-location">{location}</span>')
             html.append('      </div>')
-            
-            # Show all positions under this company
-            for i, position in enumerate(positions):
+
+            # Each position: title left, its own dates right, then its bullets
+            for position in positions:
                 title = position.get('title', '')
                 start_date = position.get('startDate', '')
                 end_date = position.get('endDate', '')
-                
-                if i == 0:
-                    # First position gets the location on the right
-                    html.append('      <div class="job-title-row">')
-                    html.append(f'        <span class="job-title">{title} ({format_date(start_date)} - {format_date(end_date)})</span>')
-                    html.append(f'        <span class="job-location">{location}</span>')
-                    html.append('      </div>')
-                else:
-                    # Additional positions just show title and dates
-                    html.append('      <div class="job-title-row">')
-                    html.append(f'        <span class="job-title">{title} ({format_date(start_date)} - {format_date(end_date)})</span>')
-                    html.append('        <span class="job-location"></span>')
-                    html.append('      </div>')
-                
-                # Add highlights for this position
-                html.append('      <ul class="job-details">')
+                html.append('      <div class="position">')
+                html.append('        <div class="position-row">')
+                html.append(f'          <span class="position-title">{title}</span>')
+                html.append(f'          <span class="position-date">{format_date(start_date)} - {format_date(end_date)}</span>')
+                html.append('        </div>')
+                html.append('        <ul class="job-details">')
                 for highlight in position.get('highlights', []):
-                    html.append(f'        <li>{highlight}</li>')
-                html.append('      </ul>')
-            
+                    html.append(f'          <li>{highlight}</li>')
+                html.append('        </ul>')
+                html.append('      </div>')
+
             html.append('    </div>')
         else:
             # Old format: single position (maintain exact original behavior)
