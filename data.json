@@ -8,11 +8,22 @@
     {
       "company": "General Motors",
       "location": "Austin, TX",
-      "position": "Data Engineer, Connected Vehicle Data Engineering",
-      "startDate": "2025-04-01",
+      "position": "Software Engineer, Data Governance",
+      "startDate": "2026-04-01",
       "endDate": "Present",
       "highlights": [
-        "Designed and deployed event-driven data collection systems, processing real-time telemetry across a fleet of 100,000+ connected devices in production",
+        "Built React and Django internal web application that automates Databricks onboarding — users submit forms and the application executes Databricks API calls to provision workspace access, create Azure AD groups, and manage group membership",
+        "Administer Databricks platform across multiple workspaces, including user access provisioning, service principals, catalog permissions, external volumes, and Azure storage integration"
+      ]
+    },
+    {
+      "company": "General Motors",
+      "location": "Austin, TX",
+      "position": "Data Engineer, Connected Vehicle Data Engineering",
+      "startDate": "2025-04-01",
+      "endDate": "2026-04-01",
+      "highlights": [
+        "Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet",
         "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry",
         "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics for deployed data collection programs"
       ]
@@ -33,12 +44,11 @@
   ],
   "projects": [
     {
-      "name": "Long Marine Lab Stranding Map",
-      "url": "https://github.com/lmlstrandingnetwork/lml-stranding-map",
+      "name": "Coaster: E-Ink Cycling GPS",
+      "url": "",
       "highlights": [
-        "Built full-stack geospatial web application with Node.js/Express REST API backend and React frontend, enabling scientists to digitize marine mammal stranding records with location tracking, photo uploads, and filterable search",
-        "Established separate dev/prod environments with CI/CD automation and implemented Git-based code review process to maintain code quality throughout development",
-        "Mentored next cohort of engineering students on codebase, development practices, and technical implementation"
+        "Building ESP32-S3 cycling computer in C++ (PlatformIO) with a 200x200 e-paper display that records GPS and barometer data to GPX files and uploads rides to Strava over OAuth when it reaches home Wi-Fi",
+        "Wrote a desktop simulator that renders every screen and a scripted ride through the real UI code, plus native unit tests for GPS parsing, ride stats and GPX output, so firmware is checked before flashing hardware"
       ]
     },
     {
@@ -61,12 +71,21 @@
   "skills": [
     {
       "name": "Languages",
-      "keywords": ["Python", "Java", "Bash", "SQL", "JavaScript"]
+      "keywords": [
+        "Python",
+        "Java",
+        "C++",
+        "Bash",
+        "SQL",
+        "JavaScript"
+      ]
     },
     {
       "name": "Technologies",
       "keywords": [
         "Node.js",
+        "React",
+        "Django",
         "Docker",
         "Kubernetes",
         "PostgreSQL",
