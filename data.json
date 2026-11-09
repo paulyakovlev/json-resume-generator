@@ -16,7 +16,7 @@
           "highlights": [
             "Provide hands-on support for Databricks onboarding and data access requests across a 5,000+ member internal support channel, including workspace provisioning, service principal troubleshooting, Terraform configuration review, and access approval workflows",
             "Lead AI help desk rollouts for engineering teams, building conversational intake workflows in Slack that replace form-first requests with guided collection and automated routing, from requirements and proof of concept through testing, training, and launch",
-            "Built and maintain a weekly Databricks pipeline that scores data domains against governance KPIs with automated data quality checks, powering the scorecard for monthly data steward reviews"
+            "Build and maintain Databricks ETL pipelines for governance and access control"
           ]
         },
         {
@@ -25,8 +25,7 @@
           "endDate": "2026-04-01",
           "highlights": [
             "Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet",
-            "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry",
-            "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics for deployed data collection programs"
+            "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry"
           ]
         },
         {
