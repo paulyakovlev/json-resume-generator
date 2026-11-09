@@ -8,55 +8,54 @@
     {
       "company": "General Motors",
       "location": "Austin, TX",
-      "position": "Software Engineer, Data Governance",
-      "startDate": "2026-04-01",
-      "endDate": "Present",
-      "highlights": [
-        "Built React and Django internal web application that automates Databricks onboarding — users submit forms and the application executes Databricks API calls to provision workspace access, create Azure AD groups, and manage group membership",
-        "Administer Databricks platform across multiple workspaces, including user access provisioning, service principals, catalog permissions, external volumes, and Azure storage integration"
-      ]
-    },
-    {
-      "company": "General Motors",
-      "location": "Austin, TX",
-      "position": "Data Engineer, Connected Vehicle Data Engineering",
-      "startDate": "2025-04-01",
-      "endDate": "2026-04-01",
-      "highlights": [
-        "Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet",
-        "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry",
-        "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics for deployed data collection programs"
-      ]
-    },
-    {
-      "company": "General Motors",
-      "location": "Austin, TX",
-      "position": "Software Engineer, Big Data Engineering & Infrastructure",
-      "startDate": "2021-02-21",
-      "endDate": "2025-04-01",
-      "highlights": [
-        "Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M",
-        "Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)",
-        "Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps",
-        "Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection"
+      "positions": [
+        {
+          "title": "Software Engineer, Data Governance",
+          "startDate": "2026-04-01",
+          "endDate": "Present",
+          "highlights": [
+            "Built React and Django internal web application that automates Databricks onboarding — users submit forms and the application executes Databricks API calls to provision workspace access, create Azure AD groups, and manage group membership",
+            "Administer Databricks platform across multiple workspaces, including user access provisioning, service principals, catalog permissions, external volumes, and Azure storage integration"
+          ]
+        },
+        {
+          "title": "Data Engineer, Connected Vehicle Data Engineering",
+          "startDate": "2025-04-01",
+          "endDate": "2026-04-01",
+          "highlights": [
+            "Designed and deployed event-driven data collection systems, processing real-time telemetry across GM's connected vehicle fleet",
+            "Resolved production data collection failures for rental fleet partner (100,000+ vehicles) by implementing direct read method to bypass queue bottleneck, ensuring accurate fuel level and odometer telemetry",
+            "Developed Python ETL pipeline migrating CSV/XML configuration files from Git repository into Databricks, enabling PowerBI analytics for deployed data collection programs"
+          ]
+        },
+        {
+          "title": "Software Engineer, Big Data Engineering & Infrastructure",
+          "startDate": "2021-02-21",
+          "endDate": "2025-04-01",
+          "highlights": [
+            "Developed GM's custom Hadoop distribution (GMDP) by integrating open-source components including Tez UI, Ambari, and Livy, migrating from Cloudera and reducing annual costs by $1.2M",
+            "Contributed to Apache Ambari and Bigtop open-source projects by implementing Livy service integration (Ambari PR#3790, Bigtop PR#1282)",
+            "Automated Docker-based Hadoop development environment, reducing developer setup time from 35+ minutes to 10 minutes by eliminating manual build and deployment steps",
+            "Responded to Log4Shell vulnerability by developing automated remediation script for production Hadoop clusters, integrating into standard startup process for ongoing protection"
+          ]
+        }
       ]
     }
   ],
   "projects": [
     {
       "name": "Coaster: E-Ink Cycling GPS",
-      "url": "",
+      "url": "https://paulyakovlev.github.io/coaster/",
       "highlights": [
-        "Building ESP32-S3 cycling computer in C++ (PlatformIO) with a 200x200 e-paper display that records GPS and barometer data to GPX files and uploads rides to Strava over OAuth when it reaches home Wi-Fi",
-        "Wrote a desktop simulator that renders every screen and a scripted ride through the real UI code, plus native unit tests for GPS parsing, ride stats and GPX output, so firmware is checked before flashing hardware"
+        "Designing and building an ESP32-S3 cycling computer with a 200x200 e-paper display that records rides from GPS and barometer sensors to GPX files and uploads them to Strava when it reaches home Wi-Fi"
       ]
     },
     {
       "name": "Real-Time Transit Data Pipeline",
-      "url": "",
+      "url": "https://github.com/paulyakovlev/muni-tracker",
       "highlights": [
-        "End-to-end data pipeline collecting San Francisco Muni predictions via REST API, storing in PostgreSQL, and visualizing real-time transit patterns through Grafana dashboards",
-        "Deployed on a self-hosted Raspberry Pi cluster, managing real hardware networking and node configuration to run Kubernetes workloads end-to-end"
+        "Python service polling the 511.org transit API every minute for real-time San Francisco Muni arrival predictions, storing them in PostgreSQL and visualizing arrivals and route maps in Grafana dashboards",
+        "Containerized with Docker and deployed to Kubernetes on an Oracle Cloud server as a scheduled CronJob alongside PostgreSQL and Grafana"
       ]
     }
   ],
